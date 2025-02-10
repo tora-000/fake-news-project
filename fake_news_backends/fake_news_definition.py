@@ -1,14 +1,18 @@
+#!/usr/bin/env python3
 import spacy
 from flask import Flask, request, jsonify, send_from_directory
 import requests
 from textblob import TextBlob
 import networkx as nx
+import matplotlib
 import matplotlib.pyplot as plt
 from flask_cors import CORS
 import os
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF, RDFS
 import uuid
+
+matplotlib.use('agg')
 
 # Load spaCy model
 try:
