@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import spacy
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
@@ -217,5 +219,6 @@ def serve_visualization(filename):
 
 
 if __name__ == '__main__':
+    port = 4500  # Change this port number if desired
     nlp = spacy.load("en_core_web_sm")
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=True)

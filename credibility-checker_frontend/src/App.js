@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
+const port = 4500;  // Change this port number if desired
+
 function App() {
   const [text, setText] = useState('');
   const [author, setAuthor] = useState('');
@@ -11,7 +13,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:5000/credibility', { text, author, source });
+      const response = await axios.post(`http://127.0.0.1:${port}/credibility`, { text, author, source });
       setResult(response.data);
     } catch (error) {
       console.error('Error fetching credibility score:', error);
@@ -66,7 +68,7 @@ function App() {
             <p><strong>Credibility Score:</strong> {result.credibility_score}</p>
             <p><strong>Credibility Message:</strong> {getCredibilityMessage(result.credibility_score)}</p>
             <h3>Ontology Graph</h3>
-            <img src={`http://127.0.0.1:5000/graph/${result.graph_url}`} alt="Ontology Graph"/>
+            <img src={`http://127.0.0.1:${port}/graph/${result.graph_url}`} alt="Ontology Graph"/>
           </div>
         )}
       </header>

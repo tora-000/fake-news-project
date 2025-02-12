@@ -37,3 +37,5 @@ Open http://localhost:3000 in your browser.
 * Score > 5: The news is moderately credible 
 * Score ≤ 5: The news is not credible 
 
+## Notes
+By default, this application uses TCP port 4500 for communication between frontend and backend. If you wish to change it, please modify the variable `port` in **BOTH** `fake_news_backends/fake_news_definition.py` and `creadibility-checker_frontend/App.js`
