@@ -2,7 +2,7 @@
 
 This project is an application for detecting the credibility of news, including a frontend (React) and a backend (Flask). Users can input text, and the system will analyze the text and return a credibility score and an entity relationship graph.
 
-## How to deploy
+## How to Deploy
 
 Run the following command in the frontend folder:
 
@@ -37,5 +37,6 @@ Open http://localhost:3000 in your browser.
 * Score > 5: The news is moderately credible 
 * Score ≤ 5: The news is not credible 
 
-## Notes
-By default, this application uses TCP port 4500 for communication between frontend and backend. If you wish to change it, please modify the variable `port` in **BOTH** `fake_news_backends/fake_news_definition.py` and `creadibility-checker_frontend/App.js`
+## API Documentation
+
+See [docs/backend.md](docs/backend.md) for backend API documentation.
