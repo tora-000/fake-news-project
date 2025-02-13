@@ -41,7 +41,7 @@ JSON Format:
 }
 ```
 
-* `credibility_score`: An integer from 0 to 100, indicating the score of the credibility. Higher is better.
+* `credibility_score`: An integer indicating the score of the credibility. Higher is better. See [README.md](../README.md) for details.
 * `visualization_url`: The URL to the RDF visualization graph (see below for details)
 * `rdf_triples`: The RDF triple, in Turtle format.
 
