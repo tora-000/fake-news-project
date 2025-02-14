@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue
+}
+\urlstyle{same}
+\usepackage[
+includehead,
+nomarginpar,
+]{geometry}
+
+\pagestyle{fancy}
+\fancyhead{} 
+\fancyhead[L]{TSWR21 Project Report,  HT2024}
+
+\title{Fake News Detection}
+\author{Cl\'ement Loeuillet, Samson Dubuy, Cheng Yang, Yi Yang, TingJun Yuan}
+\date{Febrary 10, 2025}
+
+\begin{document}
+
+\maketitle  
+
+\section{Introduction}
+The application that this project creates is the Fake News Detection System which specializes in sports news. The entire process involves analyzing the information of articles given by the user, author, and source to ensure the credibility of particular news in this system. The application is powered by natural language processing (NLP) techniques to identify entities within the text, as well as a variety of data sources to compute a credibility score and combine the ontology definitions to present a visual representation of the relationships within the ontology. The score also assists readers in evaluating the legitimacy of sports news.
+
+Disinformation can be contagious in social media and other online platforms, creating a pervasive sense of confusion and distrust. To tackle this issue, the current application enables users to assess the credibility of sports news, which can assist them in making decisions and enhancing media literacy.
+
+\section{Application Description}
+\subsection{Application System}
+The fundamental structure of the application system consists of a front-end and a back-end. The front-end is built using React, allowing users to input text, author, and source information. The back-end is developed using Flask, which processes the input data, performs entity extraction, and calculates the credibility score. The front-end and back-end communicate via HTTP requests. The front-end sends user input to the back-end, which processes the data and returns the results.
+
+\subsection{Technical Details}
+The application utilizes several key technologies and libraries:
+\begin{itemize}
+    \item \textbf{Ontologies}: The application models relationships between concepts like sources, authors, and entities. The ontology helps in structuring the extracted information and visualizing the relationships. This allows the system to better understand the context of the information and provide more accurate credibility assessments by defining these relationships.
+    \item \textbf{Methods/Techniques}: The system employs a specialized sports news ontology to model semantic relationships between key concepts such as news sources, authors, and entities. This ontology provides a structured framework for organizing extracted information while enabling interactive relationship visualization. By explicitly defining hierarchical classes (e.g., \textit{Athlete} as a subclass of \textit{Person}) and property constraints (e.g., \textit{hasAuthor} domain-range restrictions), the ontology enhances contextual understanding and delivers more precise credibility assessments.
+\end{itemize}
+
+\subsection{Application Usage}
+The application provides the following functionalities:
+\begin{itemize}
+    \item \textbf{Input Text Analysis}: Users can input text about sports news, author name, and source. The system then processes this input to extract relevant entities and information.
+    \item \textbf{Ontology Construction with RDFLib}: Defined classes (\textit{SportsArticle, Athlete, NewsBrand}) and properties (\textit{participatesIn, mentionsEntity}) using RDFLib.
+    \item \textbf{Entity Validation via SPARQL}: Developed SPARQL queries to verify entities against Wikidata.
+    \item \textbf{Visualization}: The system produces a graph visualization to present the interaction between entities and displays these graphics on screen. This representation helps users understand how various elements are connected, making it easier to evaluate the credibility of the news article.
+\end{itemize}
+
+\textbf{Use Case 1: Checking Credibility of a Sport News}
+\begin{enumerate}
+    \item User inputs the news article text, author name, and source.
+    \item User submits the form.
+    \item The system processes the input, extracts entities, and calculates the credibility score.
+    \item The system displays the credibility score.
+\end{enumerate}
+
+\textbf{Use Case 2: Visualizing Entity Relationships}
+\begin{enumerate}
+    \item User inputs the news article text, author name, and source.
+    \item User submits the form.
+    \item The system processes the input and extracts entities.
+    \item The system generates a graph visualization of the entities and their relationships.
+    \item The user views the graph to understand the connections between different pieces of information.
+\end{enumerate}
+
+\section{Discussion}
+Throughout the development of this project, several lessons were learned:
+\begin{itemize}
+    \item \textbf{Ontology Definition and Modeling}: In this project, we leveraged RDFLib to construct a domain-specific ontology that classifies entities into distinct types (e.g., authors, sources, athletes, teams, and events) and defines semantic relationships (e.g., \textit{hasAuthor, participatesIn}). By introducing hierarchical class structures (e.g., \textit{Athlete} as a subclass of \textit{Person}) and linking entities to Wikidata via \textit{owl:sameAs}, we enhanced the system’s ability to organize and visualize complex relationships within news articles. This structured approach improved contextual understanding and enabled precise credibility assessments.
+    \item \textbf{SPARQL Queries and Entity Validation}: We implemented SPARQL to validate entities against trusted knowledge bases like Wikidata. For example, queries such as:
+    \begin{quote}
+    \texttt{SELECT ?item WHERE \{ ?item rdfs:label "BBC Sport"@en; wdt:P31/wdt:P279* wd:Q1173904 \}}
+    \end{quote}
+    ensured accurate verification of news sources and athletes. 
+    \item \textbf{Rule-Based Reasoning}: The system employs rule-based reasoning to dynamically calculate credibility scores based on ontology relationships. For example:
+    \begin{itemize}
+        \item If a source (e.g., \textit{BBC Sport}) is verified as authoritative (\textit{wd:Q552359}), add +10 points.
+        \item If an athlete (e.g., \textit{Cristiano Ronaldo}) participates in an event (e.g., \textit{Champions League}), add +5 points.
+        \item Use SPARQL to check if \texttt{?athlete ex:participatesIn ?event} exists in the RDF graph and trigger scoring rules based on inferred relationships.
+    \end{itemize}
+    This approach replaces static scoring with logic grounded in semantic relationships, improving transparency and accuracy.
+\end{itemize}
+
+Overall, this project provided a comprehensive understanding of the theories and technologies related to natural language processing, knowledge representation, and ontology modeling. It demonstrated the potential of using these techniques to assess the credibility of news articles and highlighted the importance of continuous improvement and adaptation to address emerging challenges.
+
+\begin{thebibliography}{99}
+\bibitem{Guarino2009}
+Guarino, Nicola, Daniel Oberle, and Steffen Staab. "What is an ontology?." \textit{Handbook on ontologies} (2009): 1-17.
+\end{thebibliography}
+
+\end{document}
