@@ -1,0 +1,116 @@
+{
+    "articles": [
+        {
+            "id": "1",
+            "title": "Sweden to Invest $1 Billion in AI Research by 2030",
+            "content": "The Swedish government has announced a landmark investment to position the country as a global leader in artificial intelligence...",
+            "author": "Alex Johnson",
+            "source": "Global Tech Times",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "2",
+            "title": "AI Helps Swedish Startups Scale Globally",
+            "content": "Swedish startups are leveraging AI technologies to innovate in sectors ranging from healthcare to finance...",
+            "author": "Linda Eriksson",
+            "source": "Nordic Business Insider",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "3",
+            "title": "Sweden Leads in Data Privacy Initiatives",
+            "content": "A new study reveals Sweden's data privacy framework is setting benchmarks for other EU nations...",
+            "author": "Sophie Larson",
+            "source": "Privacy Today",
+            "imageUrl": "https://images.unsplash.com/photo-1559138809-9c3f9c4c01d3"
+        },
+        {
+            "id": "4",
+            "title": "AI Predicts the Collapse of Swedish Economy by 2025",
+            "content": "A controversial AI model claims that Sweden will face an unprecedented economic crisis due to rising inflation...",
+            "author": "John Doe",
+            "source": "Future Shocks",
+            "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3"
+        },
+        {
+            "id": "5",
+            "title": "Sweden to Replace All Teachers with AI Robots",
+            "content": "In a radical move, Swedish schools are set to phase out human teachers by 2035, according to leaked documents...",
+            "author": "Jane Smith",
+            "source": "AI Chronicles",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "6",
+            "title": "AI Creates a New Language Only Swedes Can Understand",
+            "content": "An AI developed in Stockholm has created a language so complex that only native Swedes seem to comprehend it...",
+            "author": "Emily Johansson",
+            "source": "Tech Enigma",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "7",
+            "title": "Sweden Partners with Google for AI Development Hub",
+            "content": "Google has announced a strategic partnership with Sweden to establish a new AI research and development hub in Stockholm...",
+            "author": "Caroline Andersson",
+            "source": "Tech World News",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "8",
+            "title": "AI-Driven Climate Solutions from Sweden Impress UN",
+            "content": "Swedish AI projects tackling climate change were showcased at the latest UN summit, earning international acclaim...",
+            "author": "Oscar Bergman",
+            "source": "Global Sustainability",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "9",
+            "title": "Swedish Universities Launch AI Education Program",
+            "content": "Top universities in Sweden are now offering specialized AI programs to meet the growing demand for skilled professionals...",
+            "author": "Emma Lundqvist",
+            "source": "Education Now",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "10",
+            "title": "Sweden Tops AI Ethics Rankings Globally",
+            "content": "A recent report ranks Sweden as the global leader in AI ethics, thanks to its robust regulatory framework...",
+            "author": "Liam Nilsson",
+            "source": "Ethics Weekly",
+            "imageUrl": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d"
+        },
+        {
+            "id": "11",
+            "title": "AI Predicts Sweden Will Become an Island by 2050",
+            "content": "A controversial AI simulation claims rising sea levels will isolate Sweden from mainland Europe within decades...",
+            "author": "Mark Wilson",
+            "source": "Climate Shock Daily",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "12",
+            "title": "Swedish AI Software Writes Best-Selling Novel",
+            "content": "An AI developed in Gothenburg has penned a novel that topped bestseller lists worldwide...",
+            "author": "Nina Karlsson",
+            "source": "AI Fiction Today",
+            "imageUrl": "https://images.unsplash.com/photo-1558478551-1a378f63328e"
+        },
+        {
+            "id": "13",
+            "title": "Sweden Deploys AI-Controlled Police Robots",
+            "content": "Leaked documents suggest Sweden will roll out AI-driven robots to patrol urban areas and reduce crime rates...",
+            "author": "Victor Holm",
+            "source": "Future Watch",
+            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+        },
+        {
+            "id": "14",
+            "title": "AI Discovers Viking Treasure Hidden in Sweden",
+            "content": "An AI-powered drone has reportedly uncovered a Viking treasure hoard hidden in Swedish mountains...",
+            "author": "Helena Sandstr\u00f6m",
+            "source": "AI Explorer",
+            "imageUrl": "https://images.unsplash.com/photo-1593642634367-d91a135587b5"
+        }
+    ]
+}

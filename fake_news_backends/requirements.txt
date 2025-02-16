@@ -4,3 +4,4 @@ flask-cors
 rdflib
 SPARQLWrapper
 pyvis
+python-dotenv
