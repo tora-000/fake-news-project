@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import spacy
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from rdflib import Graph, URIRef,Namespace
@@ -12,6 +13,7 @@ from pyvis.network import Network
 
 
 app = Flask(__name__)
+load_dotenv()
 CORS(app)
 
 EX = Namespace("http://example.org/ontology#")
@@ -79,7 +81,6 @@ def link_wikidata_entity(graph, label, entity_type):
 
 
 def get_athlete_events(athlete_name):
-    """获取运动员参与的赛事"""
     query = f"""
     SELECT DISTINCT ?eventLabel WHERE {{
       ?athlete rdfs:label "{athlete_name}"@en;
@@ -217,8 +218,9 @@ def analyze_article():
 def serve_visualization(filename):
     return send_from_directory(os.getcwd(), filename)
 
+#If you want to change the port number, please modify it in the .flaskenv file
+port = int(os.getenv("FLASK_RUN_PORT", 4500))
 
 if __name__ == '__main__':
-    port = 4500  # Change this port number if desired
     nlp = spacy.load("en_core_web_sm")
     app.run(host='0.0.0.0', port=port, debug=True)

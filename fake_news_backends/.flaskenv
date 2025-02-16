@@ -1,0 +1,2 @@
+FLASK_RUN_PORT=4500
+FLASK_APP=fake_news_definition.py

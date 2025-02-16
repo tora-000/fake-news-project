@@ -13,10 +13,10 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`http://127.0.0.1:${port}/credibility`, { text, author, source });
+      const response = await axios.post(`http://127.0.0.1:${port}/analyze`, { text, author, source });
       setResult(response.data);
     } catch (error) {
-      console.error('Error fetching credibility score:', error);
+      console.error('Error fetching analysis:', error);
     }
   };
 
@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Fake News Detection</h1>
+        <h1>Fake Sports News Detection</h1>
         <form onSubmit={handleSubmit}>
           <textarea
             value={text}
@@ -68,7 +68,13 @@ function App() {
             <p><strong>Credibility Score:</strong> {result.credibility_score}</p>
             <p><strong>Credibility Message:</strong> {getCredibilityMessage(result.credibility_score)}</p>
             <h3>Ontology Graph</h3>
-            <img src={`http://127.0.0.1:${port}/graph/${result.graph_url}`} alt="Ontology Graph"/>
+            <iframe
+              title="Ontology Graph"
+              src={`http://127.0.0.1:${port}${result.visualization_url}`}
+              width="100%"
+              height="800px"
+              style={{ border: 'none' }}
+            ></iframe>
           </div>
         )}
       </header>
