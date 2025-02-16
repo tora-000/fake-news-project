@@ -15,6 +15,11 @@ Run the following command in the frontend folder to start the React development 
 ```sh
 npm start
 ```
+OR
+```sh
+npm run dev
+```
+
 
 Run the following command in the backend folder to start the Flask application:
 
