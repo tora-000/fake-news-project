@@ -10,7 +10,6 @@ import {ArticleFormResult} from "./components/ArticleFormResult.tsx";
 interface AnalyseResponse {
   credibility_score: number;
   visualization_url: string;
-  rdf_triples: string;
 }
 
 function App() {
@@ -81,9 +80,6 @@ function App() {
         setResponseData(responseData);
       }
     ).catch(
-      error => {
-        alert(`An error occurred: ${error}`);
-      }
     );
 
     setShowForm(false);
@@ -98,7 +94,7 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <Newspaper className="h-8 w-8 text-secondary"/>
-              <h1 className="text-2xl font-bree font-bold text-primary">Fake news detector</h1>
+              <h1 className="text-2xl font-bree font-bold text-primary">Fake sports news detector</h1>
             </div>
             <button
               onClick={handleNewArticle}
@@ -138,7 +134,6 @@ function App() {
         <ArticleFormResult
           onClose={() => setShowFormResult(false)}
           credibility_score={responseData?.credibility_score || 0}
-          rdf_triples={responseData?.rdf_triples || ""}
           visualization_url={responseData?.visualization_url || ""}
           loading={loading}
         />

@@ -45,6 +45,7 @@ export const ArticleForm: React.FC<ArticleFormProps> = ({ article, onClose, onSu
               onChange={(e) => setFormData({ ...formData, content: e.target.value })}
               className="w-full p-2 border border-neutral/20 rounded-md focus:border-secondary focus:ring-1 focus:ring-secondary h-32"
               required
+              placeholder={`Enter text to analyze\nScore Standards:\nScore > 10: The news is very credible\nScore > 7: The news is highly credible\nScore > 5: The news is moderately credible\nScore ≤ 5: The news is not credible`}
             />
           </div>
 

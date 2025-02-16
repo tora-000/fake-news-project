@@ -5,15 +5,25 @@ import axios from "axios";
 interface ArticleFormResultProps {
   credibility_score: number;
   visualization_url: string;
-  rdf_triples: string;
   onClose: () => void;
   loading: boolean;
 }
 
+const getCredibilityMessage = (score: number): string => {
+  if (score > 10) {
+    return "The news is very credible";
+  } else if (score > 7) {
+    return "The news is highly credible";
+  } else if (score > 5) {
+    return "The news is moderately credible";
+  } else {
+    return "The news is not credible";
+  }
+};
+
 export const ArticleFormResult: React.FC<ArticleFormResultProps> = ({
                                                                       credibility_score,
                                                                       onClose,
-                                                                      rdf_triples,
                                                                       visualization_url,
                                                                       loading,
                                                                     }) => {
@@ -26,9 +36,6 @@ export const ArticleFormResult: React.FC<ArticleFormResultProps> = ({
         setHtmlPage(response.data);
       }
     ).catch(
-      error => {
-        alert(`An error occurred: ${error}`);
-      }
     );
   }
 
@@ -59,16 +66,9 @@ export const ArticleFormResult: React.FC<ArticleFormResultProps> = ({
               <label className="block text-sm font-medium text-neutral mb-1">
                 Credibility score
               </label>
-              <p className="text-lg font-bold text-primary">{credibility_score}</p>
+              <p className="text-lg text-primary">{credibility_score}</p>
+              <p className="text-primary">Credibility Message: {getCredibilityMessage(credibility_score)}</p>
             </div>
-
-            <div>
-              <label className="block text-sm font-medium text-neutral mb-1">
-                RDF triples
-              </label>
-              <p className="text-sm text-neutral">{rdf_triples}</p>
-            </div>
-
             <div className="space-y-4">
               <label className="block text-sm font-medium text-neutral mb-1">
                 Visualization

@@ -1,116 +1,84 @@
 {
-    "articles": [
-        {
-            "id": "1",
-            "title": "Sweden to Invest $1 Billion in AI Research by 2030",
-            "content": "The Swedish government has announced a landmark investment to position the country as a global leader in artificial intelligence...",
-            "author": "Alex Johnson",
-            "source": "Global Tech Times",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "2",
-            "title": "AI Helps Swedish Startups Scale Globally",
-            "content": "Swedish startups are leveraging AI technologies to innovate in sectors ranging from healthcare to finance...",
-            "author": "Linda Eriksson",
-            "source": "Nordic Business Insider",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "3",
-            "title": "Sweden Leads in Data Privacy Initiatives",
-            "content": "A new study reveals Sweden's data privacy framework is setting benchmarks for other EU nations...",
-            "author": "Sophie Larson",
-            "source": "Privacy Today",
-            "imageUrl": "https://images.unsplash.com/photo-1559138809-9c3f9c4c01d3"
-        },
-        {
-            "id": "4",
-            "title": "AI Predicts the Collapse of Swedish Economy by 2025",
-            "content": "A controversial AI model claims that Sweden will face an unprecedented economic crisis due to rising inflation...",
-            "author": "John Doe",
-            "source": "Future Shocks",
-            "imageUrl": "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3"
-        },
-        {
-            "id": "5",
-            "title": "Sweden to Replace All Teachers with AI Robots",
-            "content": "In a radical move, Swedish schools are set to phase out human teachers by 2035, according to leaked documents...",
-            "author": "Jane Smith",
-            "source": "AI Chronicles",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "6",
-            "title": "AI Creates a New Language Only Swedes Can Understand",
-            "content": "An AI developed in Stockholm has created a language so complex that only native Swedes seem to comprehend it...",
-            "author": "Emily Johansson",
-            "source": "Tech Enigma",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "7",
-            "title": "Sweden Partners with Google for AI Development Hub",
-            "content": "Google has announced a strategic partnership with Sweden to establish a new AI research and development hub in Stockholm...",
-            "author": "Caroline Andersson",
-            "source": "Tech World News",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "8",
-            "title": "AI-Driven Climate Solutions from Sweden Impress UN",
-            "content": "Swedish AI projects tackling climate change were showcased at the latest UN summit, earning international acclaim...",
-            "author": "Oscar Bergman",
-            "source": "Global Sustainability",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "9",
-            "title": "Swedish Universities Launch AI Education Program",
-            "content": "Top universities in Sweden are now offering specialized AI programs to meet the growing demand for skilled professionals...",
-            "author": "Emma Lundqvist",
-            "source": "Education Now",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "10",
-            "title": "Sweden Tops AI Ethics Rankings Globally",
-            "content": "A recent report ranks Sweden as the global leader in AI ethics, thanks to its robust regulatory framework...",
-            "author": "Liam Nilsson",
-            "source": "Ethics Weekly",
-            "imageUrl": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d"
-        },
-        {
-            "id": "11",
-            "title": "AI Predicts Sweden Will Become an Island by 2050",
-            "content": "A controversial AI simulation claims rising sea levels will isolate Sweden from mainland Europe within decades...",
-            "author": "Mark Wilson",
-            "source": "Climate Shock Daily",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "12",
-            "title": "Swedish AI Software Writes Best-Selling Novel",
-            "content": "An AI developed in Gothenburg has penned a novel that topped bestseller lists worldwide...",
-            "author": "Nina Karlsson",
-            "source": "AI Fiction Today",
-            "imageUrl": "https://images.unsplash.com/photo-1558478551-1a378f63328e"
-        },
-        {
-            "id": "13",
-            "title": "Sweden Deploys AI-Controlled Police Robots",
-            "content": "Leaked documents suggest Sweden will roll out AI-driven robots to patrol urban areas and reduce crime rates...",
-            "author": "Victor Holm",
-            "source": "Future Watch",
-            "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-        },
-        {
-            "id": "14",
-            "title": "AI Discovers Viking Treasure Hidden in Sweden",
-            "content": "An AI-powered drone has reportedly uncovered a Viking treasure hoard hidden in Swedish mountains...",
-            "author": "Helena Sandstr\u00f6m",
-            "source": "AI Explorer",
-            "imageUrl": "https://images.unsplash.com/photo-1593642634367-d91a135587b5"
-        }
-    ]
+  "articles": [
+    {
+      "id": "1",
+      "title": "Cristiano Ronaldo Leads Portugal to UEFA Euro 2024 Victory",
+      "content": "Cristiano Ronaldo delivered a historic performance, scoring a hat-trick to lead Portugal to victory in the UEFA Euro 2024 final. His unmatched leadership and precision on the field secured Portugal’s second European Championship title.",
+      "author": "Sky Sports",
+      "source": "Sky Sports",
+      "imageUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d"
+    },
+    {
+      "id": "2",
+      "title": "Simone Biles Shatters Records at Paris 2024 Olympics",
+      "content": "Simone Biles won four gold medals at the 2024 Summer Olympics in Paris, becoming the most decorated gymnast in history. Her flawless execution and record-breaking routines captivated audiences worldwide.",
+      "author": "ESPN Staff",
+      "source": "ESPN",
+      "imageUrl": "https://images.unsplash.com/photo-1533105079780-92b9be482077"
+    },
+    {
+      "id": "3",
+      "title": "Max Verstappen Clinches Third Consecutive F1 Title",
+      "content": "Max Verstappen secured his third straight Formula 1 World Championship title after a thrilling victory at the Abu Dhabi Grand Prix, outpacing Lewis Hamilton and Charles Leclerc.",
+      "author": "BBC Sport Staff",
+      "source": "BBC Sport",
+      "imageUrl": "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9"
+    },
+    {
+      "id": "4",
+      "title": "Naomi Osaka Triumphs in US Open Comeback",
+      "content": "Naomi Osaka made a stunning return to professional tennis, defeating Iga Swiatek in the 2024 US Open final to claim her fifth Grand Slam title.",
+      "author": "The Guardian Sports",
+      "source": "The Guardian",
+      "imageUrl": "https://images.unsplash.com/photo-1533105079780-92b9be482077"
+    },
+    {
+      "id": "5",
+      "title": "Patrick Mahomes Leads Chiefs to Super Bowl LVIII Victory",
+      "content": "In a nail-biting Super Bowl LVIII, Patrick Mahomes led the Kansas City Chiefs to a last-minute victory over the San Francisco 49ers with a game-winning touchdown pass.",
+      "author": "NFL Network",
+      "source": "NFL.com",
+      "imageUrl": "https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f"
+    },
+    {
+      "id": "6",
+      "title": "Messi and Inter Miami Win Historic MLS Cup",
+      "content": "Lionel Messi and Inter Miami completed a dream season by winning the 2024 MLS Cup, marking a historic milestone in American soccer.",
+      "author": "FOX Sports",
+      "source": "FOX Sports",
+      "imageUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d"
+    },
+    {
+      "id": "7",
+      "title": "Golden State Warriors Clinch 2024 NBA Championship",
+      "content": "The Golden State Warriors secured the 2024 NBA Championship after a thrilling series against the Milwaukee Bucks, led by Stephen Curry’s record-breaking three-pointers.",
+      "author": "NBA Insider",
+      "source": "NBA.com",
+      "imageUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d"
+    },
+    {
+      "id": "8",
+      "title": "Rafael Nadal Wins 15th French Open Title",
+      "content": "Rafael Nadal made an extraordinary comeback, winning his 15th French Open title at the age of 38 after defeating young sensation Carlos Alcaraz in a thrilling five-set final.",
+      "author": "Tennis World",
+      "source": "Tennis World USA",
+      "imageUrl": "https://images.unsplash.com/photo-1521412644187-c49fa049e84d"
+    },
+    {
+      "id": "9",
+      "title": "Tadej Pogačar Claims Third Tour de France Victory",
+      "content": "Slovenian cyclist Tadej Pogačar dominated the 2024 Tour de France, securing his third overall victory with an impressive performance in the mountain stages.",
+      "author": "Cycling Weekly",
+      "source": "Cycling Weekly",
+      "imageUrl": "https://images.unsplash.com/photo-1533105079780-92b9be482077"
+    },
+    {
+      "id": "10",
+      "title": "Serena Williams Announces Wimbledon 2024 Comeback",
+      "content": "Serena Williams confirmed her return to professional tennis, announcing her participation in Wimbledon 2024 after a two-year hiatus.",
+      "author": "Reuters Sports",
+      "source": "Reuters",
+      "imageUrl": "https://images.unsplash.com/photo-1568992687947-868a62a9f521"
+    }
+  ]
 }
