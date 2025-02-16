@@ -1,6 +1,7 @@
 # Fake News Detactor
 
 This project is an application for detecting the credibility of news, including a frontend (React) and a backend (Flask). Users can input text, and the system will analyze the text and return a credibility score and an entity relationship graph.
+In addition,credibility-checker_frontend is old frontend and dynamic_frontend is new frontend,new frontend was used to demostrate,you can use both of them.
 
 ## How to Deploy
 
